@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../Css/sideBar.css" />
+    <link rel="stylesheet" href="../Css/payment.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>payment</title>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="top-side-bar">
+        <div class="logo-div">
+          <h3 class="logo">T<span>M</span>S</h3>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="dash">
+            <i class="bx bxs-dashboard"></i>
+            <span class="nav-items">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/properties.html">
+            <i class="bx bxs-building-house"></i>
+            <span class="nav-items">Properties</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Html/payment.html">
+            <i class="bx bx-wallet"></i>
+            <span class="nav-items active-tab">Payment</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/maintence.html">
+            <i class="bx bxs-car-mechanic"></i>
+            <span class="nav-items">Maintenance</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/message.html">
+            <i class="bx bxs-message"></i>
+            <span class="nav-items">Messages</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="logout-space">
+        <i class="bx bx-log-out"></i>
+        <p class="logout">Logout</p>
+      </div>
+
+      <div class="user">
+        <div class="user-img">
+          <img class="user-img" src="../images/user.avif" alt="" />
+        </div>
+        <div>
+          <p class="name">Tenant Name</p>
+        </div>
+      </div>
+    </div>
+
+    <main style="margin-left: 240px">
+      <div class="pay-table">
+        <div class="top-pay">
+          <p>use the button to verify your transacctions</p>
+          <div class="pay-button">
+            <button class="btn">Verify with paystack</button>
+            <button class="btn">Verify with Rave</button>
+            <button class="btn">submit appeal</button>
+          </div>
+          <table style="width: 130%">
+            <thead>
+              <th>payment types</th>
+              <th>amount</th>
+              <th>year</th>
+              <th>action</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><h5>Full payment</h5></td>
+                <td><h5>$120,000</h5></td>
+                <td><h5>2024/2025</h5></td>
+                <td><button class="btn btn-pay1">Proceed</button></td>
+              </tr>
+              <tr>
+                <td><h5>Installment</h5></td>
+                <td><input type="number" placeholder="enter amount" /></td>
+                <td><h5>2024/2025</h5></td>
+                <td><button class="btn btn-pay">Proceed</button></td>
+              </tr>
+
+              <tr>
+                <td><h5>other payment</h5></td>
+                <td><input type="number" placeholder="enter amount" /></td>
+                <td><h5>2024/2025</h5></td>
+                <td><button class="btn btn-pay">Proceed</button></td>
+              </tr>
+
+              <tr>
+                <td><h5>Maintenance fee</h5></td>
+                <td><h5>$10,000</h5></td>
+                <td><h5>2024/2025</h5></td>
+                <td><button class="btn btn-pay">Proceed</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="popup">
+        <div class="popup-to-add">
+          <form action="" class="addStaffForm" id="paymentForm">
+            <i class="bx bxs-x-circle btn3"></i>
+            <div class="formRow">
+              <div class="formControl">
+                <label for="fName">Payer ID</label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="formControl">
+                <label for="lName">Amount</label>
+                <input type="number" id="amount" required />
+              </div>
+              <div class="formControl">
+                <label for="sex">Payment Description</label>
+                <input type="text" id="sex" required />
+              </div>
+              <div class="formControl">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" required />
+              </div>
+              <div class="formRow">
+                <p class="message"></p>
+                <button class="btn paybtn">Pay</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="../js/payment.js"></script>
+  </body>
+</html>

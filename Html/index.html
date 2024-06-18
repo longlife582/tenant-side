@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/sideBar.css" />
+    <link rel="stylesheet" href="../Css/index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="side-bar">
+      <div class="top-side-bar">
+        <div class="logo-div">
+          <h3 class="logo">T<span>M</span>S</h3>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="dash">
+            <i class="bx bxs-dashboard"></i>
+            <span class="nav-items active-tab">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/properties.html">
+            <i class="bx bxs-building-house"></i>
+            <span class="nav-items">Properties</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../Html/payment.html">
+            <i class="bx bx-wallet"></i>
+            <span class="nav-items">Payment</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/maintence.html">
+            <i class="bx bxs-car-mechanic"></i>
+            <span class="nav-items">Maintenance</span>
+          </a>
+        </li>
+        <li>
+          <a href="../Html/message.html">
+            <i class="bx bxs-message"></i>
+            <span class="nav-items">Messages</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="logout-space">
+        <i class="bx bx-log-out"></i>
+        <p class="logout">Logout</p>
+      </div>
+
+      <div class="user">
+        <div class="user-img">
+          <img class="user-img" src="../images/user.avif" alt="" />
+        </div>
+        <div>
+          <p class="name">Tenant Name</p>
+        </div>
+      </div>
+    </div>
+
+    <main style="margin-left: 240px">
+      <div class="top-div">
+        <div class="properties">
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Properties</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bx-building-house"></i>
+          </div>
+        </div>
+
+        <div class="Tenants">
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Tenants</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bx-body"></i>
+          </div>
+        </div>
+        <div class="Clients">
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Clients</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
+        </div>
+        <div class="workers">
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>workers</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bxs-user-account"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="under-table">
+        <div class="table-two">
+          <table style="width: 100%">
+            <thead style="width: 100%">
+              <tr>
+                <th>issues</th>
+                <th>Tenant</th>
+                <th>Reported</th>
+                <th>last Updated</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr class="tr">
+                <td><h5>Leaky Faucet</h5></td>
+                <td><h5>promise oviawele</h5></td>
+                <td><h5>2 days</h5></td>
+                <td><h5>2 hours</h5></td>
+                <td><h5>in progress</h5></td>
+              </tr>
+
+              <tr class="tr">
+                <td><h5>Leaky Faucet</h5></td>
+                <td><h5>promise oviawele</h5></td>
+                <td><h5>2 days</h5></td>
+                <td><h5>2 hours</h5></td>
+                <td><h5>in progress</h5></td>
+              </tr>
+
+              <tr class="tr">
+                <td><h5>Leaky Faucet</h5></td>
+                <td><h5>promise oviawele</h5></td>
+                <td><h5>2 days</h5></td>
+                <td><h5>2 hours</h5></td>
+                <td><h5>in progress</h5></td>
+              </tr>
+
+              <tr class="tr">
+                <td><h5>Leaky Faucet</h5></td>
+                <td><h5>promise oviawele</h5></td>
+                <td><h5>2 days</h5></td>
+                <td><h5>2 hours</h5></td>
+                <td><h5>in progress</h5></td>
+              </tr>
+
+              <tr class="tr">
+                <td><h5>Leaky Faucet</h5></td>
+                <td><h5>promise oviawele</h5></td>
+                <td><h5>2 days</h5></td>
+                <td><h5>2 hours</h5></td>
+                <td><h5>in progress</h5></td>
+              </tr>
+            </tbody>
+          </table>
+          <h1 class="view-more"><a href="">view more</a></h1>
+        </div>
+        <div class="notications-section">
+          <div class="top-not">
+            <div class="top-content">
+              <i class="bx bxs-bell-ring ring"></i>
+              <h1>Notifications</h1>
+            </div>
+          </div>
+          <div class="notication">
+            <div class="messages">
+              <div class="img">
+                <img class="user-img img" src="../image/user.avif" alt="" />
+              </div>
+              <div class="message-sender">
+                <h2 class="message-name">charle sent a message</h2>
+                <p class="message-sent">hey please come fix the bathroom</p>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="img">
+                <img class="user-img img" src="../image/user.avif" alt="" />
+              </div>
+              <div class="message-sender">
+                <h2 class="message-name">charle sent a message</h2>
+                <p class="message-sent">hey please come fix the bathroom</p>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="img">
+                <img class="user-img img" src="../image/user.avif" alt="" />
+              </div>
+              <div class="message-sender">
+                <h2 class="message-name">charle sent a message</h2>
+                <p class="message-sent">hey please come fix the bathroom</p>
+              </div>
+            </div>
+            <div class="messages">
+              <div class="img">
+                <img class="user-img img" src="../image/user.avif" alt="" />
+              </div>
+              <div class="message-sender">
+                <h2 class="message-name">charle sent a message</h2>
+                <p class="message-sent">hey please come fix the bathroom</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
